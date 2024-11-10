@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #061e3e; /* Dark background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.results-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.results-container {
+    background-color: white; /* White container for results */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center text */
+    max-width: 90%; /* Adjust width for responsiveness */
+    width: 400px; /* Default width on larger screens */
+}
+
+.artist-image {
+    width: 80%; /* Responsive image size */
+    max-width: 200px; /* Maximum width to prevent overflow */
+    height: auto; /* Keep aspect ratio */
+    max-height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.main-genre {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.genre {
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #333;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.artist-title, .outfit-title {
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    margin: 20px 0 10px;
+}
+
+.outfit-image {
+    width: 80%;
+    max-width: 200px; /* Limit max width */
+    height: auto;
+    max-height: 250px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    .results-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .main-genre {
+        font-size: 1.3em;
+    }
+
+    .genre {
+        font-size: 2em;
+        
+    }
+
+    .artist-title, .outfit-title {
+        font-size: 1em;
+    }
+}
